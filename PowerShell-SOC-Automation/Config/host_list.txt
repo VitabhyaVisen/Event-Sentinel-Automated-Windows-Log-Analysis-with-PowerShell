@@ -1,0 +1,8 @@
+# This is the list of hosts to scan.
+# Add one computer name or IP per line.
+# Lines starting with # are comments and will be ignored.
+
+localhost
+SERVER-01
+SERVER-02
+DC-01

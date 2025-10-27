@@ -1,0 +1,58 @@
+EventID,Category,Description
+4624,Authentication,Successful logon
+4625,Authentication,Failed logon attempt
+4634,Authentication,User logoff
+4648,Authentication,Logon using explicit credentials
+4672,Privilege Escalation,Special privileges assigned to new logon
+4688,Process Creation,New process created
+4689,Process Termination,Process has exited
+4697,Persistence,Service installation detected
+4698,Persistence,New scheduled task created
+4720,Account Management,User account created
+4722,Account Management,User account enabled
+4723,Account Management,Password change attempted
+4724,Account Management,Password reset attempted
+4725,Account Management,User account disabled
+4726,Account Management,User account deleted
+4732,Group Management,User added to security-enabled local group
+4733,Group Management,User removed from security-enabled local group
+4735,Group Management,Security-enabled local group changed
+4740,Account Lockout,User account locked out
+4756,Group Management,User added to universal group
+4767,Account Unlock,User account unlocked
+4771,Authentication,Kerberos pre-authentication failed
+4776,Authentication,NTLM authentication failed
+4778,Session Management,User reconnected to existing RDP session
+4779,Session Management,User disconnected from RDP session
+4627,Authentication,Group membership information
+4647,Authentication,User initiated logoff
+4657,Registry Modification,Registry value modification
+4680,Object Access,Attempt to duplicate a handle to an object
+4682,Token Manipulation,Token handle duplication
+4683,Object Access,Access to object was removed
+4684,Process Termination,Process terminated
+4685,Token Manipulation,Handle to object requested
+4686,Token Manipulation,Handle to object duplicated
+4690,Token Manipulation,Duplicate handle closed
+4691,Token Manipulation,Handle requested with different permissions
+4692,Token Manipulation,Handle duplicated with different permissions
+4693,Token Manipulation,Attempted access to an object
+4702,Persistence,Task updated or deleted
+4719,Policy Change,Audit policy changed
+4728,Group Management,User added to security-enabled global group
+4731,Group Management,Security-enabled local group created
+4739,Account Management,Domain policy changed
+4769,Authentication,Kerberos service ticket request
+4772,Authentication,Kerberos ticket validation failed
+4780,Privilege Escalation,Administrator group membership enumerated
+4798,Account Management,User's local group membership enumerated
+4799,Account Management,User's global group membership enumerated
+4904,Policy Change,Security event source started
+4905,Policy Change,Security event source stopped
+4907,Policy Change,Audit policy changed
+5038,System Integrity,Code integrity check failed
+5156,Network,Allowed network connection
+5158,Network,Bound network port
+5159,Network,Blocked network connection
+4103,PowerShell,PowerShell script block logging
+4104,PowerShell,PowerShell command execution

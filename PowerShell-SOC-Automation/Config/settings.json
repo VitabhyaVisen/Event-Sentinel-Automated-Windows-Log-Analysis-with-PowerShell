@@ -1,0 +1,48 @@
+{
+  "paths": {
+    "hostList": "config/host_list.txt",
+    "eventIds": "config/event_ids.csv",
+    "rawLogDir": "data/raw_logs",
+    "parsedLogDir": "data/parsed_logs",
+    "reportDir": {
+      "daily": "data/reports/daily",
+      "weekly": "data/reports/weekly",
+      "monthly": "data/reports/monthly"
+    },
+    "scriptLog": "logs/script_execution.log"
+  },
+  "logCollection": {
+    "logsToCollect": [
+      "Security",
+      "System",
+      "Microsoft-Windows-PowerShell/Operational"
+    ],
+    "daysToCollect": 1
+  },
+  "detectionRules": {
+    "bruteForceThreshold": 5,
+    "bruteForceTimeWindow_Minutes": 30,
+    "criticalEventIds": [4625, 4624, 4688, 4720, 4726] 
+  },
+  "reporting": {
+    "reportFormat": "HTML",
+    "reportNamePrefix": "SOC_Report",
+    "includeCharts": true
+  },
+ "alerting": {
+  "enabled": true,
+  "smtpServer": "smtp.your-email-provider.com",
+  "smtpPort": 587,
+  "emailFrom": "soc-alerts@yourdomain.com",
+  "emailTo": "your-personal-email@yourdomain.com",
+  "emailUsername": "soc-alerts@yourdomain.com",
+  "emailPassword": "PROMPT",
+  "useSSL": true,
+  "credentialTarget": "SOC_SMTP"             // optional - name used if you store creds in Windows Cred Manager
+  // "webhookUrl": "https://hooks.example.com/..." // optional - Slack/Teams webhook
+}, 
+ "logging": {
+    "logLevel": "INFO",
+    "maxLogSizeMB": 10
+  }
+}
